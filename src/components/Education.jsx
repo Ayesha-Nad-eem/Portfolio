@@ -9,14 +9,14 @@ const Education = () => {
       period: 'Sep 2023 - Present',
       cgpa: '3.574',
       description: 'Highlighted excellence in both management and technical skills with a focus on modern software development practices and emerging technologies.',
-      color: 'emerald'
+      color: 'white'
     },
     {
       degree: 'Intermediate in Computer Science',
       institution: 'Punjab College, Lahore',
       period: '2021 - 2023',
       description: 'Completed comprehensive computer science curriculum with hands-on experience in robotics programming and active participation in team leadership roles and collaborative projects.',
-      color: 'cyan'
+      color: 'gray'
     }
   ];
 
@@ -25,14 +25,14 @@ const Education = () => {
       title: 'Microsoft Office Specialist',
       issuer: 'Microsoft Corporation',
       icon: '🏆',
-      color: 'blue'
+      color: 'white'
     },
     {
       title: 'Robotics Programme',
       issuer: 'Punjab College',
       period: '2021 – 2023',
       icon: '🤖',
-      color: 'purple'
+      color: 'gray'
     }
   ];
 
@@ -67,7 +67,7 @@ const Education = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent"
+          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent"
         >
           Education & Certificates
         </motion.h2>
@@ -86,19 +86,19 @@ const Education = () => {
               variants={itemVariants}
               whileHover={{ y: -5, scale: 1.02 }}
               className={`bg-gray-800/40 backdrop-blur-xl rounded-2xl p-8 border-l-4 ${
-                edu.color === 'emerald' ? 'border-emerald-500' : 'border-cyan-500'
+                edu.color === 'white' ? 'border-white' : 'border-gray-500'
               } relative overflow-hidden group`}
             >
               {/* Gradient overlay */}
               <div className={`absolute inset-0 bg-gradient-to-r ${
                 edu.color === 'emerald' 
-                  ? 'from-emerald-500/5 to-transparent' 
-                  : 'from-cyan-500/5 to-transparent'
+                  ? 'from-white/5 to-transparent' 
+                  : 'from-gray-500/5 to-transparent'
               } opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
               
               {/* Pulse indicator */}
               <div className={`absolute top-6 right-6 w-3 h-3 ${
-                edu.color === 'emerald' ? 'bg-emerald-400' : 'bg-cyan-400'
+                edu.color === 'white' ? 'bg-white' : 'bg-gray-400'
               } rounded-full animate-pulse`}></div>
 
               <div className="relative z-10">
@@ -107,7 +107,7 @@ const Education = () => {
                 </h3>
                 
                 <p className={`${
-                  edu.color === 'emerald' ? 'text-emerald-400' : 'text-cyan-400'
+                  edu.color === 'white' ? 'text-white' : 'text-gray-400'
                 } font-medium mb-1`}>
                   {edu.institution}
                 </p>
@@ -145,13 +145,13 @@ const Education = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-gray-800/40 backdrop-blur-xl rounded-2xl p-6 border border-emerald-500/20 relative overflow-hidden group"
+              className="bg-gray-900/40 backdrop-blur-xl rounded-2xl p-6 border border-white/20 relative overflow-hidden group"
             >
               {/* Gradient overlay */}
               <div className={`absolute inset-0 bg-gradient-to-br ${
                 cert.color === 'blue' 
-                  ? 'from-blue-500/10 via-cyan-500/5 to-transparent'
-                  : 'from-purple-500/10 via-violet-500/5 to-transparent'
+                  ? 'from-white/10 via-gray-300/5 to-transparent'
+                  : 'from-gray-500/10 via-gray-400/5 to-transparent'
               } opacity-0 group-hover:opacity-100 transition-all duration-500`}></div>
               
               {/* Pulse indicator */}

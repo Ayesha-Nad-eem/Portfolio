@@ -41,7 +41,7 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent"
+          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent"
         >
           Testimonials
         </motion.h2>
@@ -54,14 +54,14 @@ const Testimonials = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="bg-gray-800/40 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-emerald-500/20 relative overflow-hidden"
+              className="bg-gray-900/40 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-white/20 relative overflow-hidden"
             >
               {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-cyan-500/5 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-gray-300/5 pointer-events-none"></div>
               
               {/* Decorative quotes */}
-              <div className="absolute top-4 left-4 text-4xl text-emerald-400/30">"</div>
-              <div className="absolute bottom-4 right-4 text-4xl text-emerald-400/30 rotate-180">"</div>
+              <div className="absolute top-4 left-4 text-4xl text-white/30">"</div>
+              <div className="absolute bottom-4 right-4 text-4xl text-white/30 rotate-180">"</div>
 
               <div className="relative z-10 text-center">
                 <motion.div
@@ -87,7 +87,7 @@ const Testimonials = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.5 }}
                 >
-                  <h4 className="text-xl font-bold text-emerald-400 mb-1">
+                  <h4 className="text-xl font-bold text-white mb-1">
                     {testimonials[currentIndex].name}
                   </h4>
                   <p className="text-gray-400">
@@ -108,7 +108,7 @@ const Testimonials = () => {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'bg-gradient-to-r from-emerald-400 to-cyan-400 scale-125'
+                    ? 'bg-gradient-to-r from-white to-gray-300 scale-125'
                     : 'bg-gray-600 hover:bg-gray-500'
                 }`}
               />

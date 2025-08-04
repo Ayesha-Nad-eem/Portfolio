@@ -6,30 +6,30 @@ const Skills = () => {
     {
       title: 'Frontend',
       skills: [
-        { name: 'React.js', level: 90, color: 'from-blue-400 to-cyan-400' },
-        { name: 'React Native', level: 85, color: 'from-purple-400 to-pink-400' },
-        { name: 'JavaScript', level: 88, color: 'from-yellow-400 to-orange-400' },
-        { name: 'Tailwind CSS', level: 92, color: 'from-teal-400 to-green-400' },
-        { name: 'HTML/CSS', level: 95, color: 'from-orange-400 to-red-400' }
+        { name: 'React.js', level: 90, color: 'from-white to-gray-300' },
+        { name: 'React Native', level: 85, color: 'from-gray-200 to-gray-400' },
+        { name: 'JavaScript', level: 88, color: 'from-gray-100 to-gray-300' },
+        { name: 'Tailwind CSS', level: 92, color: 'from-white to-gray-400' },
+        { name: 'HTML/CSS', level: 95, color: 'from-gray-300 to-gray-500' }
       ]
     },
     {
       title: 'Tools & Technologies',
       skills: [
-        { name: 'Git & GitHub', level: 85, color: 'from-gray-400 to-slate-500' },
-        { name: 'API Integration', level: 80, color: 'from-emerald-400 to-teal-400' },
-        { name: 'Database Management', level: 75, color: 'from-cyan-400 to-blue-400' },
-        { name: 'C++', level: 78, color: 'from-indigo-400 to-purple-400' },
-        { name: 'OOP', level: 82, color: 'from-rose-400 to-pink-400' }
+        { name: 'Git & GitHub', level: 85, color: 'from-gray-400 to-gray-600' },
+        { name: 'API Integration', level: 80, color: 'from-white to-gray-500' },
+        { name: 'Database Management', level: 75, color: 'from-gray-200 to-gray-600' },
+        { name: 'C++', level: 78, color: 'from-gray-300 to-gray-700' },
+        { name: 'OOP', level: 82, color: 'from-white to-gray-400' }
       ]
     },
     {
       title: 'Soft Skills',
       skills: [
-        { name: 'Problem Solving', level: 90, color: 'from-green-400 to-emerald-400' },
-        { name: 'Team Collaboration', level: 88, color: 'from-violet-400 to-purple-400' },
-        { name: 'Communication', level: 85, color: 'from-amber-400 to-yellow-400' },
-        { name: 'Project Management', level: 80, color: 'from-pink-400 to-rose-400' }
+        { name: 'Problem Solving', level: 90, color: 'from-gray-100 to-gray-500' },
+        { name: 'Team Collaboration', level: 88, color: 'from-white to-gray-600' },
+        { name: 'Communication', level: 85, color: 'from-gray-200 to-gray-500' },
+        { name: 'Project Management', level: 80, color: 'from-gray-300 to-gray-600' }
       ]
     }
   ];
@@ -70,14 +70,14 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-20 px-6 bg-gray-900/50">
+    <section id="skills" className="py-20 px-6 bg-black/50">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent"
+          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent"
         >
           Skills & Technologies
         </motion.h2>
@@ -93,10 +93,10 @@ const Skills = () => {
             <motion.div
               key={categoryIndex}
               variants={categoryVariants}
-              className="bg-gray-800/40 backdrop-blur-xl rounded-2xl p-6 border border-emerald-500/20 relative overflow-hidden"
+              className="bg-gray-900/40 backdrop-blur-xl rounded-2xl p-6 border border-white/20 relative overflow-hidden"
             >
               {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-cyan-500/5 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-gray-300/5 pointer-events-none"></div>
               
               <div className="relative z-10">
                 <h3 className="text-xl font-bold text-white mb-6 text-center">

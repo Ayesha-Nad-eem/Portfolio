@@ -11,12 +11,12 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 w-full z-50 bg-gray-900/80 backdrop-blur-xl border-b border-emerald-500/20"
+      className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/20"
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <motion.div 
           whileHover={{ scale: 1.05 }}
-          className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent cursor-pointer"
+          className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent cursor-pointer"
         >
           Ayesha Nadeem
         </motion.div>
@@ -32,10 +32,10 @@ const Navbar = () => {
             >
               <a 
                 href={`#${item.toLowerCase()}`} 
-                className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 relative group"
+                className="text-gray-300 hover:text-white transition-colors duration-300 relative group"
               >
                 {item}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-400 to-cyan-400 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-white to-gray-300 group-hover:w-full transition-all duration-300"></span>
               </a>
             </motion.li>
           ))}
@@ -45,7 +45,7 @@ const Navbar = () => {
         <motion.button 
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="md:hidden p-2 rounded-lg bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors duration-300"
+          className="md:hidden p-2 rounded-lg bg-white/20 text-white hover:bg-white/30 transition-colors duration-300"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,7 +61,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.2 }}
-              className="absolute top-full right-6 mt-2 bg-gray-800/95 backdrop-blur-xl rounded-2xl border border-emerald-500/20 p-6 md:hidden"
+              className="absolute top-full right-6 mt-2 bg-black/95 backdrop-blur-xl rounded-2xl border border-white/20 p-6 md:hidden"
             >
               {navItems.map((item, index) => (
                 <motion.a
@@ -70,7 +70,7 @@ const Navbar = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.2, delay: index * 0.05 }}
-                  className="block text-gray-300 hover:text-emerald-400 py-2 transition-colors duration-300"
+                  className="block text-gray-300 hover:text-white py-2 transition-colors duration-300"
                   onClick={() => setMobileOpen(false)}
                 >
                   {item}

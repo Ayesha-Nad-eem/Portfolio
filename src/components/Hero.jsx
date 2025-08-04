@@ -25,9 +25,9 @@ const TypingText = ({ texts }) => {
   }, [charIndex, currentIndex, texts]);
 
   return (
-    <span className="text-emerald-400">
+    <span className="text-white">
       {displayText}
-      <span className="animate-pulse text-cyan-400">|</span>
+      <span className="animate-pulse text-gray-300">|</span>
     </span>
   );
 };
@@ -59,33 +59,33 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20 relative overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-emerald-900/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
       
       {/* Floating orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           animate={{
             scale: [1, 1.2, 1],
-            opacity: [0.3, 0.6, 0.3],
+            opacity: [0.1, 0.2, 0.1],
           }}
           transition={{
             duration: 4,
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute top-1/4 left-1/4 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl"
+          className="absolute top-1/4 left-1/4 w-64 h-64 bg-white/5 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
             scale: [1.2, 1, 1.2],
-            opacity: [0.2, 0.5, 0.2],
+            opacity: [0.1, 0.15, 0.1],
           }}
           transition={{
             duration: 5,
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gray-500/5 rounded-full blur-3xl"
         />
       </div>
 
@@ -97,14 +97,14 @@ const Hero = () => {
       >
         <motion.div
           variants={itemVariants}
-          className="inline-block bg-emerald-500/10 border border-emerald-500/20 rounded-full px-6 py-3 mb-8"
+          className="inline-block bg-white/10 border border-white/20 rounded-full px-6 py-3 mb-8"
         >
-          <span className="text-emerald-400 text-sm font-medium">✨ Available for exciting opportunities</span>
+          <span className="text-white text-sm font-medium">✨ Available for exciting opportunities</span>
         </motion.div>
 
         <motion.h1
           variants={itemVariants}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-emerald-400 to-cyan-400 bg-clip-text text-transparent"
+          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent"
         >
           Ayesha Nadeem
         </motion.h1>
@@ -134,11 +134,11 @@ const Hero = () => {
           variants={itemVariants}
           className="flex flex-wrap justify-center gap-4 mb-8 text-gray-400"
         >
-          <a href="mailto:an0124163@gmail.com" className="hover:text-emerald-400 transition-colors duration-300">
+          <a href="mailto:an0124163@gmail.com" className="hover:text-white transition-colors duration-300">
             an0124163@gmail.com
           </a>
           <span>•</span>
-          <a href="tel:+923270733770" className="hover:text-emerald-400 transition-colors duration-300">
+          <a href="tel:+923270733770" className="hover:text-white transition-colors duration-300">
             +92 327 0733770
           </a>
           <span>•</span>
@@ -155,7 +155,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-full font-medium shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 transition-all duration-300"
+            className="px-8 py-3 bg-gradient-to-r from-white to-gray-300 text-black rounded-full font-medium shadow-lg shadow-white/25 hover:shadow-white/40 transition-all duration-300"
           >
             LinkedIn
           </motion.a>
@@ -166,7 +166,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 bg-gray-800 border border-gray-700 text-gray-300 rounded-full font-medium hover:border-emerald-500/50 hover:text-white transition-all duration-300"
+            className="px-8 py-3 bg-gray-900 border border-gray-700 text-gray-300 rounded-full font-medium hover:border-white/50 hover:text-white transition-all duration-300"
           >
             GitHub
           </motion.a>
@@ -176,7 +176,7 @@ const Hero = () => {
             download
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 bg-violet-600 hover:bg-violet-700 text-white rounded-full font-medium shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 transition-all duration-300"
+            className="px-8 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-full font-medium shadow-lg shadow-gray-500/25 hover:shadow-gray-500/40 transition-all duration-300"
           >
             Download CV
           </motion.a>

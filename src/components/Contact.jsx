@@ -73,7 +73,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-6 relative overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-emerald-900/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
       
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.div
@@ -85,7 +85,7 @@ const Contact = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent"
           >
             Let's Connect!
           </motion.h2>
@@ -136,7 +136,7 @@ const Contact = () => {
               href="mailto:an0124163@gmail.com"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-full font-semibold shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 transition-all duration-300 flex items-center gap-3"
+              className="px-8 py-4 bg-gradient-to-r from-white to-gray-300 text-black rounded-full font-semibold shadow-lg shadow-white/25 hover:shadow-white/40 transition-all duration-300 flex items-center gap-3"
             >
               <span>📧</span>
               Say Hello
@@ -148,7 +148,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gray-800 border border-gray-600 text-gray-300 rounded-full font-semibold hover:border-emerald-500/50 hover:text-white transition-all duration-300 flex items-center gap-3"
+              className="px-8 py-4 bg-gray-800 border border-gray-600 text-gray-300 rounded-full font-semibold hover:border-white/50 hover:text-white transition-all duration-300 flex items-center gap-3"
             >
               <span>💼</span>
               LinkedIn
